@@ -36,7 +36,7 @@ foundryup
 
 2. **Clone This Repo and install dependencies**
 ``` 
-git clone https://github.com/devNamedKiki/OA.git
+git clone https://github.com/0xLanterns/OA.git
 cd OA
 forge install
 ```
