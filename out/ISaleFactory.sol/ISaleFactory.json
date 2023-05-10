@@ -1,0 +1,201 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "feeReceiver",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "feeReceiver()": "b3f00674"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"feeReceiver\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Level1/interfaces/ISaleFactory.sol\":\"ISaleFactory\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/\",\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/Level1/interfaces/ISaleFactory.sol\":{\"keccak256\":\"0x1c704132e37cc8a74b34ce884720584a25c34c818cb9441923066d52ee469e67\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://22f34d75d0b312c4ca26ae13d766b1609910f3595ce573c148c7d4e8551766c4\",\"dweb:/ipfs/Qmd3CgQKYJv9gv8SgxwrYG4M5BBkMqR8RDAAvaqbEKkwrz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "feeReceiver",
+          "outputs": [
+            {
+              "internalType": "address payable",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/",
+        ":ds-test/=lib/solmate/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/",
+        ":solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Level1/interfaces/ISaleFactory.sol": "ISaleFactory"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Level1/interfaces/ISaleFactory.sol": {
+        "keccak256": "0x1c704132e37cc8a74b34ce884720584a25c34c818cb9441923066d52ee469e67",
+        "urls": [
+          "bzz-raw://22f34d75d0b312c4ca26ae13d766b1609910f3595ce573c148c7d4e8551766c4",
+          "dweb:/ipfs/Qmd3CgQKYJv9gv8SgxwrYG4M5BBkMqR8RDAAvaqbEKkwrz"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Level1/interfaces/ISaleFactory.sol",
+    "id": 35643,
+    "exportedSymbols": {
+      "ISaleFactory": [
+        35642
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:120:43",
+    "nodes": [
+      {
+        "id": 35636,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:43",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 35642,
+        "nodeType": "ContractDefinition",
+        "src": "58:94:43",
+        "nodes": [
+          {
+            "id": 35641,
+            "nodeType": "FunctionDefinition",
+            "src": "87:63:43",
+            "nodes": [],
+            "functionSelector": "b3f00674",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "feeReceiver",
+            "nameLocation": "96:11:43",
+            "parameters": {
+              "id": 35637,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:43"
+            },
+            "returnParameters": {
+              "id": 35640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 35639,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 35641,
+                  "src": "133:15:43",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 35638,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "133:15:43",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "132:17:43"
+            },
+            "scope": 35642,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISaleFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          35642
+        ],
+        "name": "ISaleFactory",
+        "nameLocation": "68:12:43",
+        "scope": 35643,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 43
+}
