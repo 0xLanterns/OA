@@ -8,7 +8,7 @@ Sharpen your smart contract auditing skills with this Training Ground - a platfo
 Visit [0xLanterns](https://0xLanterns.github.io)
 
 ### Shout-Out
-- This platform is 1000% inspired by [Tincho](https://twitter.com/tinchoabbate) and [Nicolás](//https://twitter.com/ngp2311).
+- This platform is 1000% inspired by [Tincho](https://twitter.com/tinchoabbate) and [Nicolás](https://twitter.com/ngp2311).
     - Tincho made [Damn Vulnerable Defi](https://www.damnvulnerabledefi.xyz) which is a great wargame to learn offensive security and improve as a security researcher! 
     - Nicolás made [damn-vulnerable-defi-foundry](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry). He was able to recreate Damn Vulnerable in Foundry!
 
