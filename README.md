@@ -5,7 +5,7 @@ Sharpen your smart contract auditing skills with this Training Ground - a platfo
 [![Twitter Follow](https://img.shields.io/twitter/follow/Kiki_developer?label=Follow%20Kiki%20%40Kiki_developer&style=social)](https://twitter.com/Kiki_developer)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ZoumanaCisse6?label=Follow%20Zouvier%20%40ZoumanaCisse6&style=social)](https://twitter.com/ZoumanaCisse6)
 
-Visit [0xLanterns](https://0xLanterns.github.io)
+Visit [0xLanterns](https://0xlanterns.vercel.app/)
 
 ### Shout-Out
 - This platform is 1000% inspired by [Tincho](https://twitter.com/tinchoabbate) and [Nicolás](https://twitter.com/ngp2311).
