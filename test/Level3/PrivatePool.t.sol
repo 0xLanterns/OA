@@ -14,9 +14,6 @@ import "../../lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol";
 
 contract TestPrivatePool is Test { 
 
-    address constant zouvier = address(0x123);
-    address constant kiki = address(0xabc);
-
     PrivatePool public privatePool;
     Factory public factory;
     address nft = address(new Milady());

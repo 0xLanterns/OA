@@ -393,7 +393,6 @@ contract PrivatePool is ERC721TokenReceiver {
 
             // check that the input weights are greater than or equal to the output weights
             if (inputWeightSum < outputWeightSum)
-                //> can I swap 1 token for many
                 revert InsufficientInputWeight();
             // calculate the fee amount
             (feeAmount) = changeFeeQuote(inputWeightSum);

@@ -28,7 +28,6 @@ contract TUSD is ERC20 {
 
     // --- Token ---
     function transferFrom(
-        //> works need to implement poc now using tUSD in buy. Just to show that owner gets less than expected when buying so they are essentially the one paying the fee not the buyer.
         address src,
         address dst,
         uint wad
