@@ -24,17 +24,17 @@ pragma solidity ^0.8.19;
  *                             ~~~~~~~~   ~~~~~~~
  */
 
-import {ERC20} from "solmate/tokens/ERC20.sol";
-import {ERC721, ERC721TokenReceiver} from "solmate/tokens/ERC721.sol";
-import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
-import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
-import {MerkleProofLib} from "solady/utils/MerkleProofLib.sol";
-import {IERC2981} from "openzeppelin/interfaces/IERC2981.sol";
-import {IRoyaltyRegistry} from "royalty-registry-solidity/IRoyaltyRegistry.sol";
-import {IERC3156FlashBorrower} from "openzeppelin/interfaces/IERC3156FlashLender.sol";
+import {ERC20} from "../../lib/solmate/src/tokens/ERC20.sol";
+import {ERC721, ERC721TokenReceiver} from "../../lib/solmate/src/tokens/ERC721.sol";
+import {FixedPointMathLib} from "../../lib/solmate/src/utils/FixedPointMathLib.sol";
+import {SafeTransferLib} from "../../lib/solmate/src/utils/SafeTransferLib.sol";
+import {MerkleProofLib} from "../../lib/solady/src/utils/MerkleProofLib.sol";
+import {IERC2981} from "../../lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol";
+import {IRoyaltyRegistry} from "./context/IRoyaltyRegistry.sol";
+import {IERC3156FlashBorrower} from "../../lib/openzeppelin-contracts/contracts/interfaces/IERC3156FlashLender.sol";
 
-import {IStolenNftOracle} from "./interfaces/IStolenNftOracle.sol";
-import {Factory} from "./Factory.sol";
+import {IStolenNftOracle} from "./context/IStolenNftOracle.sol";
+import {Factory} from "./context/Factory.sol";
 
 /// @title Private Pool
 /// @author out.eth (@outdoteth)

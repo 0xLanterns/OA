@@ -1,0 +1,956 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "royaltyAddress",
+          "type": "address"
+        }
+      ],
+      "name": "RoyaltyOverride",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "overrideAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getOverrideLookupTokenAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getRoyaltyLookupAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "overrideAllowed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "royaltyAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setRoyaltyLookupAddress",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getOverrideLookupTokenAddress(address)": "446e5365",
+    "getRoyaltyLookupAddress(address)": "de5488af",
+    "overrideAllowed(address)": "70e06281",
+    "setRoyaltyLookupAddress(address,address)": "26bd8982",
+    "supportsInterface(bytes4)": "01ffc9a7"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"royaltyAddress\",\"type\":\"address\"}],\"name\":\"RoyaltyOverride\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"overrideAddress\",\"type\":\"address\"}],\"name\":\"getOverrideLookupTokenAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getRoyaltyLookupAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"overrideAllowed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"royaltyAddress\",\"type\":\"address\"}],\"name\":\"setRoyaltyLookupAddress\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Royalty registry interface\",\"kind\":\"dev\",\"methods\":{\"getOverrideLookupTokenAddress(address)\":{\"params\":{\"overrideAddress\":\"- The override address you are looking up the token for\"}},\"getRoyaltyLookupAddress(address)\":{\"params\":{\"tokenAddress\":\"- The token address you are looking up the royalty for\"}},\"overrideAllowed(address)\":{\"params\":{\"tokenAddress\":\"- The token address you are looking up the royalty for\"}},\"setRoyaltyLookupAddress(address,address)\":{\"params\":{\"royaltyAddress\":\"- The royalty override address\",\"tokenAddress\":\"- The token address you wish to override\"}},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getOverrideLookupTokenAddress(address)\":{\"notice\":\"Returns the token address that an overrideAddress is set for. Note: will not be accurate if the override was created before this function was added.\"},\"getRoyaltyLookupAddress(address)\":{\"notice\":\"Returns royalty address location.  Returns the tokenAddress by default, or the override if it exists\"},\"overrideAllowed(address)\":{\"notice\":\"Whether or not the message sender can override the royalty address for the given token address\"},\"setRoyaltyLookupAddress(address,address)\":{\"notice\":\"Override the location of where to look up royalty information for a given token contract. Allows for backwards compatibility and implementation of royalty logic for contracts that did not previously support them.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Level3/context/IRoyaltyRegistry.sol\":\"IRoyaltyRegistry\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/\",\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"src/Level3/context/IRoyaltyRegistry.sol\":{\"keccak256\":\"0xb522897c794da1979d20905a8a30eb08b86029012de93c0c96e4a2bd6153b2b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a2886c24d0922a06cdd98062c1fab365a80d85a5c795e45bb9d50a06a52f1c3d\",\"dweb:/ipfs/QmNwKPb3JGLt6eoJW7pLE5d7qQEuKqUUSZYB2nCfigtDth\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "royaltyAddress",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "RoyaltyOverride",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "overrideAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOverrideLookupTokenAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRoyaltyLookupAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "overrideAllowed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "royaltyAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setRoyaltyLookupAddress",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "interfaceId",
+              "type": "bytes4"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "supportsInterface",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getOverrideLookupTokenAddress(address)": {
+            "params": {
+              "overrideAddress": "- The override address you are looking up the token for"
+            }
+          },
+          "getRoyaltyLookupAddress(address)": {
+            "params": {
+              "tokenAddress": "- The token address you are looking up the royalty for"
+            }
+          },
+          "overrideAllowed(address)": {
+            "params": {
+              "tokenAddress": "- The token address you are looking up the royalty for"
+            }
+          },
+          "setRoyaltyLookupAddress(address,address)": {
+            "params": {
+              "royaltyAddress": "- The royalty override address",
+              "tokenAddress": "- The token address you wish to override"
+            }
+          },
+          "supportsInterface(bytes4)": {
+            "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getOverrideLookupTokenAddress(address)": {
+            "notice": "Returns the token address that an overrideAddress is set for. Note: will not be accurate if the override was created before this function was added."
+          },
+          "getRoyaltyLookupAddress(address)": {
+            "notice": "Returns royalty address location.  Returns the tokenAddress by default, or the override if it exists"
+          },
+          "overrideAllowed(address)": {
+            "notice": "Whether or not the message sender can override the royalty address for the given token address"
+          },
+          "setRoyaltyLookupAddress(address,address)": {
+            "notice": "Override the location of where to look up royalty information for a given token contract. Allows for backwards compatibility and implementation of royalty logic for contracts that did not previously support them."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/",
+        ":ds-test/=lib/solmate/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/",
+        ":solady/=lib/solady/src/",
+        ":solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Level3/context/IRoyaltyRegistry.sol": "IRoyaltyRegistry"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+        "urls": [
+          "bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+          "dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+        ],
+        "license": "MIT"
+      },
+      "src/Level3/context/IRoyaltyRegistry.sol": {
+        "keccak256": "0xb522897c794da1979d20905a8a30eb08b86029012de93c0c96e4a2bd6153b2b2",
+        "urls": [
+          "bzz-raw://a2886c24d0922a06cdd98062c1fab365a80d85a5c795e45bb9d50a06a52f1c3d",
+          "dweb:/ipfs/QmNwKPb3JGLt6eoJW7pLE5d7qQEuKqUUSZYB2nCfigtDth"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Level3/context/IRoyaltyRegistry.sol",
+    "id": 5127,
+    "exportedSymbols": {
+      "IERC165": [
+        310
+      ],
+      "IRoyaltyRegistry": [
+        5126
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:1780:16",
+    "nodes": [
+      {
+        "id": 5079,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:16",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5080,
+        "nodeType": "ImportDirective",
+        "src": "85:87:16",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "file": "../../../lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 5127,
+        "sourceUnit": 311,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5126,
+        "nodeType": "ContractDefinition",
+        "src": "217:1595:16",
+        "nodes": [
+          {
+            "id": 5091,
+            "nodeType": "EventDefinition",
+            "src": "261:83:16",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "22fb05840ad0d4b2be640c56e11065f26b799d2918d8f81190416f62b154b9c6",
+            "name": "RoyaltyOverride",
+            "nameLocation": "267:15:16",
+            "parameters": {
+              "id": 5090,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5085,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "291:5:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5091,
+                  "src": "283:13:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5087,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "306:12:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5091,
+                  "src": "298:20:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5086,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "298:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5089,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "royaltyAddress",
+                  "nameLocation": "328:14:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5091,
+                  "src": "320:22:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5088,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:61:16"
+            }
+          },
+          {
+            "id": 5101,
+            "nodeType": "FunctionDefinition",
+            "src": "732:103:16",
+            "nodes": [],
+            "documentation": {
+              "id": 5092,
+              "nodeType": "StructuredDocumentation",
+              "src": "350:377:16",
+              "text": " Override the location of where to look up royalty information for a given token contract.\n Allows for backwards compatibility and implementation of royalty logic for contracts that did not previously support them.\n @param tokenAddress    - The token address you wish to override\n @param royaltyAddress  - The royalty override address"
+            },
+            "functionSelector": "26bd8982",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setRoyaltyLookupAddress",
+            "nameLocation": "741:23:16",
+            "parameters": {
+              "id": 5097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5094,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "773:12:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5101,
+                  "src": "765:20:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5093,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "765:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5096,
+                  "mutability": "mutable",
+                  "name": "royaltyAddress",
+                  "nameLocation": "795:14:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5101,
+                  "src": "787:22:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "787:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "764:46:16"
+            },
+            "returnParameters": {
+              "id": 5100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5099,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5101,
+                  "src": "829:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5098,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "829:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "828:6:16"
+            },
+            "scope": 5126,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 5109,
+            "nodeType": "FunctionDefinition",
+            "src": "1057:87:16",
+            "nodes": [],
+            "documentation": {
+              "id": 5102,
+              "nodeType": "StructuredDocumentation",
+              "src": "841:211:16",
+              "text": " Returns royalty address location.  Returns the tokenAddress by default, or the override if it exists\n @param tokenAddress    - The token address you are looking up the royalty for"
+            },
+            "functionSelector": "de5488af",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoyaltyLookupAddress",
+            "nameLocation": "1066:23:16",
+            "parameters": {
+              "id": 5105,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5104,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "1098:12:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5109,
+                  "src": "1090:20:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5103,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1090:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1089:22:16"
+            },
+            "returnParameters": {
+              "id": 5108,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5107,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5109,
+                  "src": "1135:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5106,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1135:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1134:9:16"
+            },
+            "scope": 5126,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 5117,
+            "nodeType": "FunctionDefinition",
+            "src": "1422:96:16",
+            "nodes": [],
+            "documentation": {
+              "id": 5110,
+              "nodeType": "StructuredDocumentation",
+              "src": "1150:267:16",
+              "text": " Returns the token address that an overrideAddress is set for.\n Note: will not be accurate if the override was created before this function was added.\n @param overrideAddress - The override address you are looking up the token for"
+            },
+            "functionSelector": "446e5365",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOverrideLookupTokenAddress",
+            "nameLocation": "1431:29:16",
+            "parameters": {
+              "id": 5113,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5112,
+                  "mutability": "mutable",
+                  "name": "overrideAddress",
+                  "nameLocation": "1469:15:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5117,
+                  "src": "1461:23:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5111,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1461:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1460:25:16"
+            },
+            "returnParameters": {
+              "id": 5116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5115,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5117,
+                  "src": "1509:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5114,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1509:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1508:9:16"
+            },
+            "scope": 5126,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 5125,
+            "nodeType": "FunctionDefinition",
+            "src": "1734:76:16",
+            "nodes": [],
+            "documentation": {
+              "id": 5118,
+              "nodeType": "StructuredDocumentation",
+              "src": "1524:205:16",
+              "text": " Whether or not the message sender can override the royalty address for the given token address\n @param tokenAddress    - The token address you are looking up the royalty for"
+            },
+            "functionSelector": "70e06281",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "overrideAllowed",
+            "nameLocation": "1743:15:16",
+            "parameters": {
+              "id": 5121,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5120,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "1767:12:16",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5125,
+                  "src": "1759:20:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5119,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1759:7:16",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1758:22:16"
+            },
+            "returnParameters": {
+              "id": 5124,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5123,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5125,
+                  "src": "1804:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5122,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1804:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1803:6:16"
+            },
+            "scope": 5126,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 5082,
+              "name": "IERC165",
+              "nameLocations": [
+                "247:7:16"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 310,
+              "src": "247:7:16"
+            },
+            "id": 5083,
+            "nodeType": "InheritanceSpecifier",
+            "src": "247:7:16"
+          }
+        ],
+        "canonicalName": "IRoyaltyRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 5081,
+          "nodeType": "StructuredDocumentation",
+          "src": "174:42:16",
+          "text": " @dev Royalty registry interface"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5126,
+          310
+        ],
+        "name": "IRoyaltyRegistry",
+        "nameLocation": "227:16:16",
+        "scope": 5127,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 16
+}

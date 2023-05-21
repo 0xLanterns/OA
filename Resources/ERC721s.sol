@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 import "../lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 import "../lib/openzeppelin-contracts/contracts/utils/Counters.sol";
+import "../lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol";
 
 contract MyERC721 is ERC721 {
     // using Counters for Counters.Counter;
@@ -24,3 +25,4 @@ contract MyERC721 is ERC721 {
         _mint(to, tokenId);
     }
 }
+

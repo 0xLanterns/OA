@@ -12,7 +12,7 @@
   },
   "files": {
     "Resources/ERC20s.sol": {
-      "lastModificationDate": 1683673155816,
+      "lastModificationDate": 1684706281674,
       "contentHash": "c9f14840b86e28bf039f92a7a767382a",
       "sourceName": "Resources/ERC20s.sol",
       "solcConfig": {
@@ -63,8 +63,8 @@
       }
     },
     "Resources/ERC721s.sol": {
-      "lastModificationDate": 1683673155816,
-      "contentHash": "9a050fb8d7a1bbfb3f4757c988f1eb4c",
+      "lastModificationDate": 1684710186417,
+      "contentHash": "d99596125c2694d646dfa7bcf9d16a3e",
       "sourceName": "Resources/ERC721s.sol",
       "solcConfig": {
         "settings": {
@@ -95,10 +95,12 @@
         }
       },
       "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol",
         "lib/openzeppelin-contracts/contracts/utils/Address.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "lib/openzeppelin-contracts/contracts/utils/Counters.sol",
@@ -945,6 +947,48 @@
         }
       }
     },
+    "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol": {
+      "lastModificationDate": 1684696536323,
+      "contentHash": "608566bc5327454ba54e487e7c226ff6",
+      "sourceName": "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC2981": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC2981.sol/IERC2981.json"
+        }
+      }
+    },
     "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol": {
       "lastModificationDate": 1683673237524,
       "contentHash": "f7f4f78c31f28534852e5c56000a25af",
@@ -1120,6 +1164,50 @@
         }
       }
     },
+    "lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol": {
+      "lastModificationDate": 1684696536327,
+      "contentHash": "f995d6f70022823e60e85f41959c801d",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ERC2981": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC2981.sol/ERC2981.json"
+        }
+      }
+    },
     "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
       "lastModificationDate": 1683673237528,
       "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
@@ -1157,6 +1245,46 @@
       "artifacts": {
         "Address": {
           "0.8.19+commit.7dd6d404.Linux.gcc": "Address.sol/Address.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/utils/Base64.sol": {
+      "lastModificationDate": 1684696536327,
+      "contentHash": "8f868da0a90e46a85baa348a896d1702",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Base64.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Base64": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Base64.sol/Base64.json"
         }
       }
     },
@@ -1573,6 +1701,86 @@
         }
       }
     },
+    "lib/solady/src/utils/LibClone.sol": {
+      "lastModificationDate": 1684696928974,
+      "contentHash": "0d309a36cc01f385f7ca598d7d5162b7",
+      "sourceName": "lib/solady/src/utils/LibClone.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "LibClone": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "LibClone.sol/LibClone.json"
+        }
+      }
+    },
+    "lib/solady/src/utils/MerkleProofLib.sol": {
+      "lastModificationDate": 1684696928974,
+      "contentHash": "6dcfe4def22500a684e34bd6cb70b60b",
+      "sourceName": "lib/solady/src/utils/MerkleProofLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "MerkleProofLib": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "MerkleProofLib.sol/MerkleProofLib.json"
+        }
+      }
+    },
     "lib/solmate/lib/ds-test/src/test.sol": {
       "lastModificationDate": 1683673282407,
       "contentHash": "962996f0e05d5218857a538a62d7c47e",
@@ -1613,6 +1821,46 @@
         }
       }
     },
+    "lib/solmate/src/auth/Owned.sol": {
+      "lastModificationDate": 1684696540619,
+      "contentHash": "11fec455b72d2743b77d783d6017e1e9",
+      "sourceName": "lib/solmate/src/auth/Owned.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Owned": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Owned.sol/Owned.json"
+        }
+      }
+    },
     "lib/solmate/src/tokens/ERC20.sol": {
       "lastModificationDate": 1683673281263,
       "contentHash": "0c7c7ada139062536af09d69d96d395c",
@@ -1650,6 +1898,131 @@
       "artifacts": {
         "ERC20": {
           "0.8.19+commit.7dd6d404.Linux.gcc": "tokens/ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "lib/solmate/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1684696540619,
+      "contentHash": "ecc06cefc5404b9e1adbc2e459d5757e",
+      "sourceName": "lib/solmate/src/tokens/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721.sol/ERC721.json"
+        },
+        "ERC721TokenReceiver": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ERC721.sol/ERC721TokenReceiver.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/FixedPointMathLib.sol": {
+      "lastModificationDate": 1684696540619,
+      "contentHash": "3945241174f1c8fdcd51c2571f8ec92e",
+      "sourceName": "lib/solmate/src/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "FixedPointMathLib": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "FixedPointMathLib.sol/FixedPointMathLib.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1684696540623,
+      "contentHash": "668dd0a8a175344c51036ae7fcb01d36",
+      "sourceName": "lib/solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeTransferLib": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "SafeTransferLib.sol/SafeTransferLib.json"
         }
       }
     },
@@ -2197,8 +2570,264 @@
         }
       }
     },
+    "src/Level3/PrivatePool.sol": {
+      "lastModificationDate": 1684709979331,
+      "contentHash": "609c50a6bc837a616e2567cb841f15ae",
+      "sourceName": "src/Level3/PrivatePool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Base64.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solady/src/utils/LibClone.sol",
+        "lib/solady/src/utils/MerkleProofLib.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Level3/PrivatePool.sol",
+        "src/Level3/context/Factory.sol",
+        "src/Level3/context/IRoyaltyRegistry.sol",
+        "src/Level3/context/IStolenNftOracle.sol",
+        "src/Level3/context/PrivatePoolMetadata.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PrivatePool": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "PrivatePool.sol/PrivatePool.json"
+        }
+      }
+    },
+    "src/Level3/context/Factory.sol": {
+      "lastModificationDate": 1684695107144,
+      "contentHash": "6df620a054012848bc3adf467adcd248",
+      "sourceName": "src/Level3/context/Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Base64.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solady/src/utils/LibClone.sol",
+        "lib/solady/src/utils/MerkleProofLib.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Level3/PrivatePool.sol",
+        "src/Level3/context/Factory.sol",
+        "src/Level3/context/IRoyaltyRegistry.sol",
+        "src/Level3/context/IStolenNftOracle.sol",
+        "src/Level3/context/PrivatePoolMetadata.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "Factory": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Factory.sol/Factory.json"
+        }
+      }
+    },
+    "src/Level3/context/IRoyaltyRegistry.sol": {
+      "lastModificationDate": 1684693963942,
+      "contentHash": "28e028344c2a45092144c0d24282422c",
+      "sourceName": "src/Level3/context/IRoyaltyRegistry.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IRoyaltyRegistry": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IRoyaltyRegistry.sol/IRoyaltyRegistry.json"
+        }
+      }
+    },
+    "src/Level3/context/IStolenNftOracle.sol": {
+      "lastModificationDate": 1684694265534,
+      "contentHash": "bb7e425f3a4ae6dd8e71d3efc638d5e7",
+      "sourceName": "src/Level3/context/IStolenNftOracle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "IStolenNftOracle": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IStolenNftOracle.sol/IStolenNftOracle.json"
+        }
+      }
+    },
+    "src/Level3/context/PrivatePoolMetadata.sol": {
+      "lastModificationDate": 1684694855180,
+      "contentHash": "694f96ec3cf703c69b10b56dfac0de93",
+      "sourceName": "src/Level3/context/PrivatePoolMetadata.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Base64.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solady/src/utils/LibClone.sol",
+        "lib/solady/src/utils/MerkleProofLib.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Level3/PrivatePool.sol",
+        "src/Level3/context/Factory.sol",
+        "src/Level3/context/IRoyaltyRegistry.sol",
+        "src/Level3/context/IStolenNftOracle.sol",
+        "src/Level3/context/PrivatePoolMetadata.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "PrivatePoolMetadata": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "PrivatePoolMetadata.sol/PrivatePoolMetadata.json"
+        }
+      }
+    },
     "test/Level0/ItsARace.t.sol": {
-      "lastModificationDate": 1683673155820,
+      "lastModificationDate": 1684696521471,
       "contentHash": "d4925b6a371c66de4daa9a9a49f25c18",
       "sourceName": "test/Level0/ItsARace.t.sol",
       "solcConfig": {
@@ -2259,7 +2888,7 @@
       }
     },
     "test/Level1/TheBestThingsInLifeAreFree.t.sol": {
-      "lastModificationDate": 1683673155820,
+      "lastModificationDate": 1684696521471,
       "contentHash": "2e84e9e47bf366f2222ec8294c57aac9",
       "sourceName": "test/Level1/TheBestThingsInLifeAreFree.t.sol",
       "solcConfig": {
@@ -2310,10 +2939,12 @@
         "lib/forge-std/src/interfaces/IMulticall3.sol",
         "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
         "lib/openzeppelin-contracts/contracts/access/IAccessControl.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol",
         "lib/openzeppelin-contracts/contracts/utils/Address.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "lib/openzeppelin-contracts/contracts/utils/Counters.sol",
@@ -2399,6 +3030,87 @@
       "artifacts": {
         "TestLenderWins": {
           "0.8.19+commit.7dd6d404.Linux.gcc": "LenderAlwaysWins.t.sol/TestLenderWins.json"
+        }
+      }
+    },
+    "test/Level3/PrivatePool.t.sol": {
+      "lastModificationDate": 1684710036554,
+      "contentHash": "aa843cf8a7e8d457d1da172b2268049c",
+      "sourceName": "test/Level3/PrivatePool.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "Resources/ERC20s.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/token/common/ERC2981.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Base64.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solady/src/utils/LibClone.sol",
+        "lib/solady/src/utils/MerkleProofLib.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Level3/PrivatePool.sol",
+        "src/Level3/context/Factory.sol",
+        "src/Level3/context/IRoyaltyRegistry.sol",
+        "src/Level3/context/IStolenNftOracle.sol",
+        "src/Level3/context/PrivatePoolMetadata.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "Milady": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "PrivatePool.t.sol/Milady.json"
+        },
+        "TestPrivatePool": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "PrivatePool.t.sol/TestPrivatePool.json"
         }
       }
     }

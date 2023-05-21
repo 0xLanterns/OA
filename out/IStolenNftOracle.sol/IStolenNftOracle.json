@@ -1,0 +1,487 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "tokenIds",
+          "type": "uint256[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "id",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "payload",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct IStolenNftOracle.Message[]",
+          "name": "proofs",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "validateTokensAreNotStolen",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "validateTokensAreNotStolen(address,uint256[],(bytes32,bytes,uint256,bytes)[])": "8a4fa05b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"tokenIds\",\"type\":\"uint256[]\"},{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"payload\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"internalType\":\"struct IStolenNftOracle.Message[]\",\"name\":\"proofs\",\"type\":\"tuple[]\"}],\"name\":\"validateTokensAreNotStolen\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"validateTokensAreNotStolen(address,uint256[],(bytes32,bytes,uint256,bytes)[])\":{\"details\":\"Check a signed message from the oracle to ensure that the token ids have not been marked as stolen.\",\"params\":{\"proofs\":\"The proofs that the token ids have not been marked as stolen.\",\"tokenAddress\":\"The address of the token contract.\",\"tokenIds\":\"The token ids to validate.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"validateTokensAreNotStolen(address,uint256[],(bytes32,bytes,uint256,bytes)[])\":{\"notice\":\"Validates that a set of token ids have not been marked as stolen by the oracle.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Level3/context/IStolenNftOracle.sol\":\"IStolenNftOracle\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/\",\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/\",\":solady/=lib/solady/src/\",\":solmate/=lib/solmate/src/\"]},\"sources\":{\"src/Level3/context/IStolenNftOracle.sol\":{\"keccak256\":\"0x2fd26ccd301f477e9a2de937a7704161a4b7eb374abe6d8dae78bb3a5e48736c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c1a79d8c57901b30e919ad534ba763e103b4cd583f8b47e4ab58394f352cbfa3\",\"dweb:/ipfs/QmbM6GRvfW92SPVtAHzvL8AfJ9Js6uWcUDNQRK6H3efw24\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "tokenIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "struct IStolenNftOracle.Message[]",
+              "name": "proofs",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "id",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "payload",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "timestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "signature",
+                  "type": "bytes"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "validateTokensAreNotStolen"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "validateTokensAreNotStolen(address,uint256[],(bytes32,bytes,uint256,bytes)[])": {
+            "details": "Check a signed message from the oracle to ensure that the token ids have not been marked as stolen.",
+            "params": {
+              "proofs": "The proofs that the token ids have not been marked as stolen.",
+              "tokenAddress": "The address of the token contract.",
+              "tokenIds": "The token ids to validate."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "validateTokensAreNotStolen(address,uint256[],(bytes32,bytes,uint256,bytes)[])": {
+            "notice": "Validates that a set of token ids have not been marked as stolen by the oracle."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/",
+        ":ds-test/=lib/solmate/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/",
+        ":solady/=lib/solady/src/",
+        ":solmate/=lib/solmate/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Level3/context/IStolenNftOracle.sol": "IStolenNftOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Level3/context/IStolenNftOracle.sol": {
+        "keccak256": "0x2fd26ccd301f477e9a2de937a7704161a4b7eb374abe6d8dae78bb3a5e48736c",
+        "urls": [
+          "bzz-raw://c1a79d8c57901b30e919ad534ba763e103b4cd583f8b47e4ab58394f352cbfa3",
+          "dweb:/ipfs/QmbM6GRvfW92SPVtAHzvL8AfJ9Js6uWcUDNQRK6H3efw24"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Level3/context/IStolenNftOracle.sol",
+    "id": 5152,
+    "exportedSymbols": {
+      "IStolenNftOracle": [
+        5151
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:954:17",
+    "nodes": [
+      {
+        "id": 5128,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:17",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 5151,
+        "nodeType": "ContractDefinition",
+        "src": "58:928:17",
+        "nodes": [
+          {
+            "id": 5137,
+            "nodeType": "StructDefinition",
+            "src": "194:246:17",
+            "nodes": [],
+            "canonicalName": "IStolenNftOracle.Message",
+            "members": [
+              {
+                "constant": false,
+                "id": 5130,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "227:2:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 5137,
+                "src": "219:10:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 5129,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "219:7:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5132,
+                "mutability": "mutable",
+                "name": "payload",
+                "nameLocation": "245:7:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 5137,
+                "src": "239:13:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 5131,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "239:5:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5134,
+                "mutability": "mutable",
+                "name": "timestamp",
+                "nameLocation": "342:9:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 5137,
+                "src": "334:17:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5133,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "334:7:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5136,
+                "mutability": "mutable",
+                "name": "signature",
+                "nameLocation": "424:9:17",
+                "nodeType": "VariableDeclaration",
+                "scope": 5137,
+                "src": "418:15:17",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 5135,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "418:5:17",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Message",
+            "nameLocation": "201:7:17",
+            "scope": 5151,
+            "visibility": "public"
+          },
+          {
+            "id": 5150,
+            "nodeType": "FunctionDefinition",
+            "src": "853:131:17",
+            "nodes": [],
+            "documentation": {
+              "id": 5138,
+              "nodeType": "StructuredDocumentation",
+              "src": "446:402:17",
+              "text": "@notice Validates that a set of token ids have not been marked as stolen by the oracle.\n @dev Check a signed message from the oracle to ensure that the token ids have not been marked as stolen.\n @param tokenAddress The address of the token contract.\n @param tokenIds The token ids to validate.\n @param proofs The proofs that the token ids have not been marked as stolen."
+            },
+            "functionSelector": "8a4fa05b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validateTokensAreNotStolen",
+            "nameLocation": "862:26:17",
+            "parameters": {
+              "id": 5148,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5140,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "897:12:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5150,
+                  "src": "889:20:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5139,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "889:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5143,
+                  "mutability": "mutable",
+                  "name": "tokenIds",
+                  "nameLocation": "930:8:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5150,
+                  "src": "911:27:17",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 5141,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "911:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 5142,
+                    "nodeType": "ArrayTypeName",
+                    "src": "911:9:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5147,
+                  "mutability": "mutable",
+                  "name": "proofs",
+                  "nameLocation": "959:6:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5150,
+                  "src": "940:25:17",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Message_$5137_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "struct IStolenNftOracle.Message[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 5145,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 5144,
+                        "name": "Message",
+                        "nameLocations": [
+                          "940:7:17"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 5137,
+                        "src": "940:7:17"
+                      },
+                      "referencedDeclaration": 5137,
+                      "src": "940:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Message_$5137_storage_ptr",
+                        "typeString": "struct IStolenNftOracle.Message"
+                      }
+                    },
+                    "id": 5146,
+                    "nodeType": "ArrayTypeName",
+                    "src": "940:9:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Message_$5137_storage_$dyn_storage_ptr",
+                      "typeString": "struct IStolenNftOracle.Message[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "888:78:17"
+            },
+            "returnParameters": {
+              "id": 5149,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "983:0:17"
+            },
+            "scope": 5151,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStolenNftOracle",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5151
+        ],
+        "name": "IStolenNftOracle",
+        "nameLocation": "68:16:17",
+        "scope": 5152,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 17
+}

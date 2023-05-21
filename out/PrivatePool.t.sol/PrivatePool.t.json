@@ -1,0 +1,21 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/Level3/PrivatePool.t.sol",
+    "id": 1,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "2200:0:0",
+    "nodes": [],
+    "license": "MIT"
+  },
+  "id": 0
+}
