@@ -52,7 +52,6 @@ privatePool = new PrivatePool(
         }
 
         Milady(nft).setApprovalForAll(address(privatePool), true);
-        Milady(nft).setApprovalForAll(address(privatePool), true);
         token.approve(address(privatePool), type(uint256).max);
 
         inputTokenIds.push(0);
