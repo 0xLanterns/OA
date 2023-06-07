@@ -1,4 +1,4 @@
-# OA    | Learn to find vulnerabilites and write POC's
+# OA    | Learn to find vulnerabilities and write POC's
 
 Sharpen your smart contract auditing skills with this Training Ground - a platform to practice identifying vulnerabilities discovered in audit contests and crafting high-quality proof of concepts.
 
@@ -13,10 +13,10 @@ Visit [0xLanterns](https://0xlanterns.vercel.app/)
     - Nicolás made [damn-vulnerable-defi-foundry](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry). He was able to recreate Damn Vulnerable in Foundry!
 
 ### Acknowledgement 
-- All of the levels are snippets from real protocols. Their team's are the ones that built the codebases and went the extra (nessasary) mile of getting a Audit by one of the premiere auditing platforms. 
+- All of the levels are snippets from real protocols. Their teams are the ones that built the codebases and went the extra (necessary) mile of getting an Audit by one of the premiere auditing platforms. 
 
 #### What is OA?
-- OA is a place for auiditors practice finding contest level vulnerabilites and writing quality POC's that illustrate the impact the vulnerabilities can have. All levels here are directly from past contest on both Code4ena and Sherlock. The idea here is that by simplifying the codebase and the testing framwork, and providing a vulnerability with different tiers of hints. We can somewhat flatten the learning curve for developing a auditors intuotion and how to write good reports. Which center around a good POC. 
+- OA is a place for auditors practice finding contest level vulnerabilities and writing quality POC's that illustrate the impact the vulnerabilities can have. All levels here are directly from past contest on both Code4ena and Sherlock. The idea here is that by simplifying the codebase and the testing framework, and providing a vulnerability with different tiers of hints. We can somewhat flatten the learning curve for developing an auditor's intuition and how to write good reports. Which center around a good POC. 
 
 ## How To Play 
 
